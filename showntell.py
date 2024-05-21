@@ -1,3 +1,6 @@
+# Write a program for managing bank accounts. the program should require the users account number and outputs the balance and transantion 
+# history of the user. Additionally the user should be allowed to deposit and withdraw
+
 class Bank:
    def __init__(self, account_number, current_balance):
        self.account_number = account_number
