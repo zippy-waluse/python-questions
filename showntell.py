@@ -1,33 +1,13 @@
-# Write a program for managing bank accounts. the program should require the users account number and outputs the balance and transantion 
-# history of the user. Additionally the user should be allowed to deposit and withdraw
 
-class Bank:
-   def __init__(self, account_number, current_balance):
-       self.account_number = account_number
-       self.balance = current_balance
-       self.transactions = []
+# Create a Person class with properties for name and age.Implement a function in the Person class to print out the person's details.
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-def check_balance(self):
-        print(self.balance)
-def deposit(self, new_amount):
-       self.balance += new_amount
-       self.transactions.append(f"{new_amount} has been deposited to the account.")
-       print(f"{new_amount} has been deposited in your account.")
+    def print_details(self):
+        print(f"Name: {self.name}, Age: {self.age}")
 
-def withdraw(self, new_amount):
-        if new_amount <= self.balance:
-            self.balance -= new_amount
-            self.transactions.append(f"{new_amount} has been withdrawn.")
-            return f"{new_amount} has been withdrawn successfully and the new balance is {self.balance}"
-        else:
-            print("Insufficient amount. Please top up.")
-def display_transaction_history(self):
-        print("\nTransaction History:")
-        for transaction in self.transactions:
-            print(transaction)
-
-
-account = Bank(account_number="abcd123456789", current_balance=20000)
-
-
-
+# Example usage
+person1 = Person("John Doe", 30)
+person1.print_details()
